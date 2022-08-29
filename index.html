@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="app-container">
+        <div class="center">
+          <img
+            class="logo"
+            height="48px"
+            width="31.09px"
+            src="imagenes/Vector.png"
+            alt=""
+          />
+          <div class="input-container">
+            <textarea
+              name=""
+              class="ingreso"
+              id=""
+              placeholder="Ingrese el texto aquí"
+              
+            ></textarea>
+
+            <div class="alerta">
+              <img class="image-alerta" src="imagenes/alert.png" alt="" />
+              <p class="mensaje-alerta">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="button-container">
+              <button class="btn encriptar" value="Encriptar">Encriptar</button>
+              <button class="btn desencriptar" value="Desencriptar">
+                Desencriptar
+              </button>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+              
+                <img src="imagenes/Muñeco.png" class="card-img" alt="" />
+              <h2 class="card-title">Ningún mensaje fue encontrado</h2>
+              <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+  
+              </div>
+              <div class="card-back">
+                <textarea class="texto-resultado" disabled></textarea>           
+                <button class="btn copiar" value="Encriptar">Copiar</button>
+              </div>
+                
+            </div>
+
+            
+            
+            
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+        <footer>
+            <a target="_blank" class="gh-link" href="https://www.linkedin.com/in/diego-guzm%C3%A1n-cerveux/">
+                <img class="gh-img" src="imagenes/li/linkedin.png" alt="">
+            </a>
+            <a target="_blank" class="gh-link" href="https://github.com/cerveux" >
+              <img class="gh-img" src="imagenes/git/GitHub-Mark-120px-plus.png"  alt="">
+              </a>
+        </footer>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
