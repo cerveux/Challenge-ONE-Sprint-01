@@ -22,12 +22,8 @@ function cardAction() {
       textoResultado.style.height = ((textoResultado.scrollHeight)) + "px";
       card.style.height = ((textoResultado.scrollHeight)+160) + "px";
     }
-    
     cardInner.style.transform = "rotateY(180deg)";
     bugMozilla.style.display = "none";
-
-
-
   };
 }
 
@@ -98,7 +94,7 @@ function desencriptar() {
         break;
     }
   }
-  textoResultado.value = resultado;
+  textoResultado.innerHTML = resultado;
   textarea.value = "";
   comprobacion && cardAction();
 }
