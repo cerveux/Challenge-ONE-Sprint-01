@@ -8,6 +8,8 @@ var cardInner = document.querySelector(".card-inner"); //inner card es lo que si
 var textoResultado = document.querySelector(".texto-resultado"); //text area de salida
 var btnCopiar = document.querySelector(".copiar"); //boton de copiar
 
+var bugMozilla = document.querySelector(".card-title");
+
 var mensaje = "";
 var resultado;
 
@@ -17,13 +19,13 @@ const regEx = /[A-Zá-ú]/;
 function cardAction() {
   if(mensaje !== ""){
     if((card.offsetHeight) !== 775){
-
-      /* alert(textoResultado.scrollHeight) */
       textoResultado.style.height = ((textoResultado.scrollHeight)) + "px";
       card.style.height = ((textoResultado.scrollHeight)+160) + "px";
     }
     
     cardInner.style.transform = "rotateY(180deg)";
+    bugMozilla.style.display = "none";
+
 
 
   };
